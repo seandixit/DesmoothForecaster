@@ -1,3 +1,6 @@
+# Overview
+_Leveraging smoothing techniques to enhance time-series forecasting for difficult time-series data_
+
 The `DesmoothForecasterModel` class provides a framework for time-series forecasting using a method that allows for original future timestep predictions to be made based on predictions on the smoothed version of the data. Currently, the model uses a simple LSTM with an option to add a custom model. It applies smoothing techniques to the target variable before training the provided model on predicting smoothed values, and then extrapolates unsmoothed, original predictions from them. 
 
 ## Installation
