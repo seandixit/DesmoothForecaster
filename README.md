@@ -1,5 +1,15 @@
 The `DesmoothForecasterModel` class provides a framework for time-series forecasting using a method that allows for original future timestep predictions to be made based on predictions on the smoothed version of the data. Currently, the model uses a simple LSTM with an option to add a custom model. It applies smoothing techniques to the target variable before training the provided model on predicting smoothed values, and then extrapolates unsmoothed, original predictions from them. 
 
+## Installation
+
+To install the `DesmoothForecaster` package, you can simply run the following command in your terminal or command prompt:
+
+```bash
+pip install DesmoothForecaster
+```
+
+This will download and install the package along with its dependencies. The package is compatible with Python 3.6 and above, and works on windows, linux, and macos.
+
 ## Class: `DesmoothForecasterModel`
 
 ### Description
@@ -109,17 +119,7 @@ Saves the trained neural network model to the specified file path. This function
 
 **Returns**:  
 - **`None`**
-
-## Installation
-
-To install the `DesmoothForecaster` package, you can simply run the following command in your terminal or command prompt:
-
-```bash
-pip install DesmoothForecaster
-```
-
-This will download and install the package along with its dependencies. The package is compatible with Python 3.6 and above, and works on windows, linux, and macos.
-
+  
 ## Usage
 To use the `DesmoothForecaster` package, you can import the `DesmoothForecasterModel` class and create an instance of it. Here's a simple example with pdw data from radars (loaded from google drive):
 ```python
