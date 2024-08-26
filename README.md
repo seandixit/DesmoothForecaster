@@ -163,7 +163,7 @@ model = desmooth_instance.train_model(
 
 Use the trained model to predict future values and save it in the current directory.
 ```python
-predictions = desmooth_instance.predict(n_future * 6)  # Predicting 6 times the future steps
+predictions = desmooth_instance.predict(n_timesteps=n_future * 6)  # Predicting 6 times the future steps
 desmooth_instance.save_trained_model('desmooth_model.h5')
 ```
 
