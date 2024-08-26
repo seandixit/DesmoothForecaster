@@ -136,6 +136,8 @@ df = pd.read_csv(output)
 
 Create an instance of the `DesmoothForecasterModel` class with the desired configuration:
 ```python
+features = ['PPB', 'APW', 'SNR']
+n_future = 7
 desmooth_instance = DesmoothForecasterModel(
     model_type='LSTM',          # Model type: 'LSTM' or 'custom'
     custom_model=None,          # Provide a custom model if using 'custom'
